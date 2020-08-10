@@ -5,7 +5,6 @@ face_detect = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 img = cv2.imread("3_people.jpg")
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
-
 faces = face_detect.detectMultiScale(gray, 1.3, 5)
 
 for (x, y, w, h) in faces:
